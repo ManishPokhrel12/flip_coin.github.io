@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coin Toss Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<h1>First Player With 5 Points Win The Game !</h1>
+	<p id="roundWinner"> </p>
+	<div class="selectInfo">
+	<p id="playerSelect"></p>
+	<p id="computerSelect"></p>
+</div>
+<div class="coinFlipVideo">
+	<h2 id="main"> </h2>
+	<video id="flipVideo" src="coinFlip.mp4">
+
+</div>
+
+<div class="score">
+	<p id="playerScore"> </p>
+	<p id="computerScore"> </p>
+</div>
+	<h2 id="info"> Make a Selection</h2>
+	<div class="selectionButton">
+		<button id="head" class="select" onclick="selectButton(0)"> Head </button>
+		<button id="tail" class="select" onclick="selectButton(1)"> Tail </button>
+		<button class="editCall" onclick="editBtn(1)">Confirm</button>
+		<button class="editCall" onclick="editBtn(0)">Reset Call</button>
+		<button id="newGame">Start New Game </button>
+	</div>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
